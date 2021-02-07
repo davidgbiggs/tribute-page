@@ -1,6 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
   <head>
+    <meta
+      name="description"
+      content="A memorial and/or tribute page dedicated to the life of Martin Sennet Conner, or Mike Conner for short."
+    />
+    <meta
+      name="keywords"
+      content="Martin Sennet Conner, Mike Conner, HTML, CSS, Javascript, David Biggs, Mississippi, Politician, Governor, Southeastern Conference, SEC, Ole Miss"
+    />
+    <meta name="author" content="David Biggs" />
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://cdn.freecodecamp.org/universal/favicons/android-chrome-192x192.png"
@@ -36,7 +45,13 @@
       rel="icon"
     />
     <title>Martin Sennet Conner</title>
+    <!-- Responsive mobile support -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      document.documentElement.classList.remove("no-js");
+    </script>
+    <!-- Modernizer support for webp fallbacks -->
+    <script async src="./webpFallback.js"></script>
     <script
       async
       src="https://kit.fontawesome.com/1be9c3711b.js"
@@ -53,37 +68,22 @@
         <div id="header-inner-flexbox">
           <div id="header-heading-block">
             <span id="upper-heading">who was</span>
-            <div
-              style="
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-              "
-            >
+            <div id="title-question-container">
               <h1 id="title">Mike Conner</h1>
-              <span style="margin-left: 120px" id="heading-question">?</span>
+              <span id="heading-question">?</span>
             </div>
           </div>
           <div id="martin-sennet-container">
-            <figure id="img-div" style="margin: 0">
+            <figure id="img-div">
               <div id="image-container">
                 <img
                   id="image"
                   src="images/martin-sennet.webp"
                   alt="Image of Mike Conner"
-                  style="margin-bottom: 10px"
+                  onerror="this.onerror=null; this.src='images/martin-sennet.jpg'"
                 />
               </div>
-              <figcaption
-                id="img-caption"
-                style="
-                  font-style: italic;
-                  margin-bottom: -5px;
-                  margin-left: 5px;
-                "
-              >
-                Mike Conner, mid-40's
-              </figcaption>
+              <figcaption id="img-caption">Mike Conner, mid-40's</figcaption>
             </figure>
           </div>
         </div>
@@ -132,16 +132,19 @@
         <a
           id="tribute-link"
           target="_blank"
+          rel="noreferrer"
           href="https://en.wikipedia.org/wiki/Martin_Sennet_Conner"
-          >More info</a
+          >Go to Wikipedia</a
         >
       </div>
     </main>
     <footer>
       <span
-        >Made with <i style="color: red" class="fas fa-heart"></i> by
-        <a href="https://davidgbiggs.com">David Biggs</a>. See the code
-        <a href="https://github.com/davidgbiggs/tribute-page">here</a>.</span
+        >Made with <i id="footer-icon" class="fas fa-heart"></i> by
+        <a href="https://davidgbiggs.com">David Biggs</a>.
+        <a href="https://github.com/davidgbiggs/tribute-page"
+          >See the code on github</a
+        >.</span
       >
     </footer>
   </body>

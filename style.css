@@ -13,7 +13,19 @@ header {
   height: 275px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #efefef;
+}
+
+.webp header {
   background-image: url("./images/header-image.webp");
+}
+
+.no-webp header {
+  background-image: url("./images/header-image.jpg");
+}
+
+.no-js header {
+  background-image: url("./images/header-image.jpg");
 }
 
 h1 {
@@ -74,6 +86,7 @@ footer {
   font-size: 140px;
   color: #678aeb;
   font-style: italic;
+  margin-left: 120px;
 }
 
 #upper-heading {
@@ -82,8 +95,13 @@ footer {
   font-style: italic;
 }
 
+#title-question-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 #martin-sennet-container {
-  background-image: url("images/ms-background.webp");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -94,19 +112,41 @@ footer {
   align-items: center;
 }
 
+.webp #martin-sennet-container {
+  background-image: url("images/ms-background.webp");
+}
+
+.no-webp #martin-sennet-container {
+  background-image: url("images/ms-background.jpg");
+}
+
+.no-js #martin-sennet-container {
+  background-image: url("images/ms-background.jpg");
+}
+
 #image-container {
-  height: 175px !important;
+  height: 175px;
   width: 130px;
   margin-bottom: 20px;
   margin-top: 40px;
 }
 
+#img-div {
+  margin-left: 120px;
+}
+
 #image {
   height: auto;
   /* margin-left: 15px; */
-  margin-bottom: 45px;
+  margin-bottom: 10px;
   max-width: 100%;
   display: block;
+}
+
+#img-caption {
+  font-style: italic;
+  margin-bottom: -5px;
+  margin-left: 5px;
 }
 
 #tribute-link {
@@ -125,7 +165,6 @@ footer {
 }
 
 #more-info-container {
-  background-image: url("images/more-info-bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   height: 200px;
@@ -138,10 +177,38 @@ footer {
   width: 950px;
 }
 
+.webp #more-info-container {
+  background-image: url("images/more-info-bg.webp");
+}
+
+.no-webp #more-info-container {
+  background-image: url("images/more-info-bg.jpg");
+}
+
+.no-js #more-info-container {
+  background-image: url("images/more-info-bg.jpg");
+}
+
+#footer-icon {
+  color: red;
+}
+
+/* mobile styles */
 @media screen and (max-width: 769px) {
   header {
-    background-image: url("images/header-background-mobile.webp");
     height: 450px;
+  }
+
+  .webp header {
+    background-image: url("images/header-background-mobile.webp");
+  }
+
+  .no-webp header {
+    background-image: url("images/header-background-mobile.jpg");
+  }
+
+  .no-js header {
+    background-image: url("images/header-background-mobile.jpg");
   }
 
   #header-inner-flexbox {
