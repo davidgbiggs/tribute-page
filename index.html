@@ -2,6 +2,39 @@
 <html>
   <head>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.freecodecamp.org/universal/favicons/android-chrome-192x192.png"
+      rel="android-chrome"
+      sizes="192x192"
+    />
+    <link
+      href="https://cdn.freecodecamp.org/universal/favicons/android-chrome-384x384.png"
+      rel="android-chrome"
+      sizes="384x384"
+    />
+    <link
+      href="https://cdn.freecodecamp.org/universal/favicons/site.webmanifest"
+      rel="manifest"
+    />
+    <link
+      href="https://cdn.freecodecamp.org/universal/favicons/apple-touch-icon.png"
+      rel="apple-touch-icon"
+      sizes="180x180"
+    />
+    <link
+      href="https://cdn.freecodecamp.org/universal/favicons/favicon-16x16.png"
+      rel="favicon"
+      sizes="16x16"
+    />
+    <link
+      href="https://cdn.freecodecamp.org/universal/favicons/favicon-32x32.png"
+      rel="favicon"
+      sizes="32x32"
+    />
+    <link
+      href="https://cdn.freecodecamp.org/universal/favicons/favicon.ico"
+      rel="icon"
+    />
     <title>Martin Sennet Conner</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script
@@ -28,19 +61,22 @@
                 justify-content: space-between;
               "
             >
-              <h1>Mike Conner</h1>
+              <h1 id="title">Mike Conner</h1>
               <span style="margin-left: 120px" id="heading-question">?</span>
             </div>
           </div>
           <div id="martin-sennet-container">
-            <figure style="margin: 0">
-              <img
-                id="ms-picture"
-                src="images/martin-sennet.png"
-                alt="Image of Mike Conner"
-                style="margin-bottom: 10px"
-              />
+            <figure id="img-div" style="margin: 0">
+              <div id="image-container">
+                <img
+                  id="image"
+                  src="images/martin-sennet.png"
+                  alt="Image of Mike Conner"
+                  style="margin-bottom: 10px"
+                />
+              </div>
               <figcaption
+                id="img-caption"
                 style="
                   font-style: italic;
                   margin-bottom: -5px;
@@ -54,50 +90,40 @@
         </div>
       </div>
     </header>
-    <main>
-      <article>
-        <h2>lorem ipsum</h2>
+    <main id="main">
+      <article id="tribute-info">
+        <h2>The Life of Martin Sennet Conner</h2>
         <p>
-          lorem ipsum dot lorem ipsum dot lorem ipsum dot lorem ipsum dot lorem
-          ipsum dot lorem ipsum dot lorem ipsum dot lorem ipsum dot lorem ipsum
-          dot lorem ipsum dot lorem ipsum dot lorem ipsum dot lorem ipsum dot
-          lorem ipsum dot lorem ipsum dot lorem ipsum dot
+          Mike Conner was an accomplished politician, lawyer, and statesman. He
+          attended the University of Mississippi at age 14 (likely the youngest
+          in history), where he was the two-time president of his fraternity
+          (the only in the chapter's history). After graduating, he continued
+          his education at Yale University, where he obtained his
+          <abbr title="Juris Doctor">J.D.</abbr> He returned to his home state
+          and served as governor from <time>1932 — 1936</time>.
         </p>
         <p>
-          lorem ipsum dot lorem ipsum dot lorem ipsum dot lorem ipsum dot lorem
-          ipsum dot lorem ipsum dot lorem ipsum dot lorem ipsum dot lorem ipsum
-          dot lorem ipsum dot lorem ipsum dot lorem ipsum dot lorem ipsum dot
-          lorem ipsum dot lorem ipsum dot lorem ipsum dot
+          Conner's term as governor was short-lived, but historic. During the
+          Great Depression, he was able move the state of Mississippi into a
+          budget surplus. Other noted accomplishments were his relationship with
+          Louisiana's governor of the time, (<a
+            href="https://en.wikipedia.org/wiki/Huey_Pierce_Long,_Jr."
+            >Huey Pierce Long, <abbr title="Junior">Jr</abbr>.</a
+          >), and their building of interstate roads, and his grace toward
+          prisoners.
         </p>
         <p>
-          lorem ipsum dot lorem ipsum dot lorem ipsum dot lorem ipsum dot lorem
-          ipsum dot lorem ipsum dot lorem ipsum dot lorem ipsum dot lorem ipsum
-          dot lorem ipsum dot lorem ipsum dot lorem ipsum dot lorem ipsum dot
-          lorem ipsum dot lorem ipsum dot lorem ipsum dot
+          The former governor capped off his career as the first commissioner
+          for the Southeastern Conference (that's right — the <abbr>SEC</abbr>,
+          of Alabama and
+          <abbr title="Louisiana State University">LSU</abbr> fame). He died on
+          <time>September 16<sup>th</sup>, 1950</time> at the age of 59 and is
+          buried in Jackson, Mississippi.
         </p>
         <p>
-          lorem ipsum dot lorem ipsum dot lorem ipsum dot lorem ipsum dot lorem
-          ipsum dot lorem ipsum dot lorem ipsum dot lorem ipsum dot lorem ipsum
-          dot lorem ipsum dot lorem ipsum dot lorem ipsum dot lorem ipsum dot
-          lorem ipsum dot lorem ipsum dot lorem ipsum dot
-        </p>
-        <p>
-          lorem ipsum dot lorem ipsum dot lorem ipsum dot lorem ipsum dot lorem
-          ipsum dot lorem ipsum dot lorem ipsum dot lorem ipsum dot lorem ipsum
-          dot lorem ipsum dot lorem ipsum dot lorem ipsum dot lorem ipsum dot
-          lorem ipsum dot lorem ipsum dot lorem ipsum dot
-        </p>
-        <p>
-          lorem ipsum dot lorem ipsum dot lorem ipsum dot lorem ipsum dot lorem
-          ipsum dot lorem ipsum dot lorem ipsum dot lorem ipsum dot lorem ipsum
-          dot lorem ipsum dot lorem ipsum dot lorem ipsum dot lorem ipsum dot
-          lorem ipsum dot lorem ipsum dot lorem ipsum dot
-        </p>
-        <p>
-          lorem ipsum dot lorem ipsum dot lorem ipsum dot lorem ipsum dot lorem
-          ipsum dot lorem ipsum dot lorem ipsum dot lorem ipsum dot lorem ipsum
-          dot lorem ipsum dot lorem ipsum dot lorem ipsum dot lorem ipsum dot
-          lorem ipsum dot lorem ipsum dot lorem ipsum dot
+          The craziest thing is... I'm related to him! Yes, Martin Sennet Conner
+          is my Great Grandfather. Thanks for reading my tribute to him! He was
+          truly a motivated, driven man, and I strive to live up to his legacy.
         </p>
       </article>
       <div id="more-info-container">
@@ -105,7 +131,7 @@
           <h2>Want to know more? Check out his Wikipedia article!</h2>
         </div>
         <a
-          id="more-info-link"
+          id="tribute-link"
           target="_blank"
           href="https://en.wikipedia.org/wiki/Martin_Sennet_Conner"
           >More info</a
@@ -116,7 +142,7 @@
       <span
         >Made with <i style="color: red" class="fas fa-heart"></i> by
         <a href="https://davidgbiggs.com">David Biggs</a>. See the code
-        <a href="">here</a>.</span
+        <a href="https://github.com/davidgbiggs/tribute-page">here</a>.</span
       >
     </footer>
   </body>
