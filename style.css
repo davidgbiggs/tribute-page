@@ -83,7 +83,7 @@ footer {
 }
 
 #martin-sennet-container {
-  background-image: url("images/ms-background.jpg");
+  background-image: url("images/ms-background.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -125,7 +125,7 @@ footer {
 }
 
 #more-info-container {
-  background-image: url("images/more-info-bg@2x.jpg");
+  background-image: url("images/more-info-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 200px;
