@@ -13,7 +13,7 @@ header {
   height: 275px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("./images/header-image.png");
+  background-image: url("./images/header-image.jpg");
 }
 
 h1 {
@@ -83,7 +83,7 @@ footer {
 }
 
 #martin-sennet-container {
-  background-image: url("images/ms-background.png");
+  background-image: url("images/ms-background.jpg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -125,7 +125,7 @@ footer {
 }
 
 #more-info-container {
-  background-image: url("images/more-info-bg@2x.png");
+  background-image: url("images/more-info-bg@2x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 200px;
@@ -140,7 +140,7 @@ footer {
 
 @media screen and (max-width: 769px) {
   header {
-    background-image: url("images/header-background-mobile.png");
+    background-image: url("images/header-background-mobile.jpg");
     height: 450px;
   }
 
